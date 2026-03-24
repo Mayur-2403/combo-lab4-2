@@ -4,8 +4,10 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                // Replace 'main' with your actual branch
-                git branch: 'main', url: 'https://github.com/yourusername/yourrepo.git'
+                // Use your actual branch name and credentials ID here
+                git branch: 'master', 
+                    url: 'https://github.com/Mayur-2403/combo-lab4-2.git', 
+                    credentialsId: 'github-credentials'
             }
         }
 
